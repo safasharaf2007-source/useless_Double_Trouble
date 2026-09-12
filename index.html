@@ -1,1 +1,113 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fish Intelligence Analyzer — Advanced Marine Parody AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-dark: #050b12;
+      --bg-deep: #03070b;
+      --card-bg: rgba(10, 24, 40, 0.72);
+      --card-bg-subtle: rgba(14, 32, 54, 0.5);
+      --card-border: rgba(53, 230, 196, 0.16);
+      --card-border-hover: rgba(53, 230, 196, 0.38);
+      --card-glow: rgba(53, 230, 196, 0.12);
+      --accent-cyan: #35e6c4;
+      --accent-cyan-glow: rgba(53, 230, 196, 0.45);
+      --accent-coral: #ff6b4a;
+      --accent-coral-glow: rgba(255, 107, 74, 0.4);
+      --text-main: #f0f6fc;
+      --text-muted: #8b9eb0;
+      --text-dim: #4f6377;
+      --font-display: 'Space Grotesk', -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-display);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Ambient Underwater Background & Caustics */
+    .underwater-ambient {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .ambient-glow-1 {
+      position: absolute;
+      width: 650px;
+      height: 650px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(53, 230, 196, 0.12) 0%, rgba(5, 11, 18, 0) 70%);
+      top: -150px;
+      left: 15%;
+      filter: blur(60px);
+      animation: ambientDrift 22s ease-in-out infinite alternate;
+    }
+
+    .ambient-glow-2 {
+      position: absolute;
+      width: 550px;
+      height: 550px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(16, 75, 110, 0.28) 0%, rgba(5, 11, 18, 0) 70%);
+      bottom: -100px;
+      right: 10%;
+      filter: blur(80px);
+      animation: ambientDrift2 26s ease-in-out infinite alternate;
+    }
+
+    .ambient-glow-coral {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 107, 74, 0.06) 0%, rgba(5, 11, 18, 0) 70%);
+      top: 45%;
+      left: 60%;
+      filter: blur(70px);
+    }
+
+    /* Caustic Light Texture Overlay */
+    .caustics-layer {
+      position: absolute;
+      inset: 0;
+      opacity: 0.15;
+      background: 
+        repeating-linear-gradient(65deg, transparent, transparent 40px, rgba(53, 230, 196, 0.08) 42px, transparent 80px),
+        repeating-linear-gradient(-35deg, transparent, transparent 50px, rgba(53, 230, 196, 0.07) 53px, transparent 95px);
+      background-size: 200% 200%;
+      animation: causticDrift 20s ease-in-out infinite alternate;
+      mix-blend-mode: screen;
+    }
+
+    /* Bubble Canvas */
+    #bubbleCanvas {
