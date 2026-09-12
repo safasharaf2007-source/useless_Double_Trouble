@@ -41,6 +41,11 @@ For Software:
 ---
 
 ## Screen Shots
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dbd31673-a824-43a9-b1e8-09cb083897be" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/86693537-d64e-465a-adb3-7c304e4c667a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b3e395e1-5a30-4d59-857d-943168928e4b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fdbd9b8e-04c4-4c9c-8f9e-f67d2431f115" />
+
 
 Made with ❤️ at TinkerHub Useless Projects 
 
