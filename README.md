@@ -10,7 +10,7 @@
 
 
 ### Team Members
-- Team Lead: [archana ns] - thejus engineering college
+- Team Lead: archana ns - thejus engineering college
 - Member 2: safa - Thejus engineering college
 - 
 
@@ -33,14 +33,15 @@ For Software:
 - vanilla JavaScript
 - Canvas API
 
-]
+
 
 ## Team Contributions
-- [Name 1]: [fish analysings]
-- [Name 2]: [fish age finder]
-- [Name 3]: [Specific contributions]
-
+- Team Lead: archana ns - thejus engineering college
+- Member 2: safa - Thejus engineering college
 ---
+
+## Screen Shots
+
 Made with ❤️ at TinkerHub Useless Projects 
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
